@@ -59,13 +59,9 @@ print("I live in {1} and I work in {0}".format(lc, wc))
 print("I live in {0} and I work in {1}".format(lc, wc), sep ='-')
 
 
-
 country = input()
-
 lc = input("Enter Live Country->")
-
 wc = input("Enter Work Country->")
-
 print("I live in {1} and I work in {0}".format(lc, wc))
 
 
