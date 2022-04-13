@@ -174,6 +174,10 @@ X O
 
 '''
 
+t = True
+not t
+
+
 a = 10
 b = 20
 c = 30
@@ -306,7 +310,7 @@ r5
 
 #Set
 
-# Mutable, Indexed, Ordered, Hetergeneous, Unique Values, Key-Value Pair
+# Mutable, Non Indexed, Ordered, Hetergeneous, Unique Values, No Key-Value Pair
 
 s1 = {10}
 
@@ -363,6 +367,158 @@ s3
 
 s3.discard(22) # No show any error even the keyvalue is not available
 s3
+
+
+
+teamA = {'India', 'Australia','Pakistan', 'England'}
+teamB = {'Bangladesh', 'New Zealand', 'West Indies', 'India'}
+
+teamA.union(teamB)
+
+teamA.intersection(teamB)
+
+teamA.difference(teamB)
+
+
+
+
+# Tuple
+
+# Non Mutable, Indexed, No Ordered, Hetergeneous, No Unique Values, No Key-Value Pair
+
+
+t1 = ()
+t2 = (20,301,2,44,34)
+t2
+
+t2[0]
+t2[4]
+t2[5] #Should be in a range
+
+t3 = ('Vk', 22, 4.2, True)
+t3
+
+t2[2] =232 #TypeError: 'tuple' object does not support item assignment
+
+t2.append(10) # AttributeError: 'tuple' object has no attribute 'append'
+
+
+
+r1 = tuple(range(101, 201))
+r1[0] =20
+
+
+
+#teamA - teamB
+
+teamA.difference()
+
+
+#Dictionary
+# Mutable, No Indexed, No Ordered, Hetergeneous, No Unique Values, Key-Value Pair
+
+d1 = {}
+
+#Key Value Paired
+d2 = {'rno':1, 'name':'VK'}
+d2
+
+#Hetrogeneous
+
+
+car = {'brand':'Honda', 'color':'white', 'model':'Jazz'}
+car
+
+#Not Indexed
+car[1]
+
+car['brand']
+
+car['color']
+
+car['model']
+
+
+car.keys()
+car.values()
+
+
+
+rno = list(range(1,100))
+
+stud = {'rno':rno}
+
+stud['rno']
+
+
+#Mutable
+car['year'] = 2020
+
+car
+
+car['year'] = 2021
+car
+
+
+
+car
+
+car.pop('brand')
+
+car
+
+car.popitem()
+
+car
+
+
+car.clear()
+car
+
+del car
+
+l1 = [20,22,11,99,88]
+
+l1
+
+l2= l1
+
+l1.pop()
+l2.append(222)
+
+
+l3 = l1.copy()
+
+l3.append(44)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
