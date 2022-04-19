@@ -363,13 +363,6 @@ pd10 = pd.merge(pd5, pd6, how='right')
 pd10
 
 
-
-
-
-
-
-
-
 fees = pd.DataFrame({'course':['BBA','MBA','BTECH', 'MTECH'], 'fees':[100000, 200000, 150000, 220000]})
 fees
 
