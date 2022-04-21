@@ -178,8 +178,48 @@ rfm = df.groupby('CustomerID').agg({'InvoiceDate': lambda date: (PRESENT - date.
 
 rfm
 rfm.columns= ['recency','frequency','monetary']
+rfm
+
+rfm['r_quartile'] = pd.qcut(rfm['recency'], 3, ['1','2','3'])
+rfm['f_quartile'] = pd.qcut(rfm['frequency'], 3, ['3','2','1'])
+rfm['m_quartile'] = pd.qcut(rfm['monetary'], 3, ['3','2','1'])
 
 rfm
+
+
+rfm['RFM_Score'] = rfm.r_quartile.astype(str) + rfm.f_quartile.astype(str) + rfm.m_quartile.astype(str)
+
+
+rfm[rfm['RFM_Score']=='331'].sort_values(ascending=False, by='monetary').head(10)
+
+
+rfm[rfm['RFM_Score']=='311'].sort_values(ascending=False, by='monetary').head(10)
+
+rfm[rfm['RFM_Score']=='311'].head(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

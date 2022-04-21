@@ -53,13 +53,18 @@ ps1 = pd.Series([100, 200, 300, 400, 500],
                 index = [1,4,3,6,7])
 ps1
 
+import pandas as pd
 ps2 = pd.Series([100, 200, 300, 400, 500], 
                 index = ['a', 'b', 'b', 'c', 'b'])
 
+
 ps2
+
 
 ps2['b']
 ps2.loc['b']
+
+
 
 ps2.iloc[0]
 ps2.iloc[1]
