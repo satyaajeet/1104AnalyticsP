@@ -248,8 +248,6 @@ r2
 from sklearn.metrics import mean_absolute_error
 mean_absolute_error(y, ypred)
 
-
-
 sns.pairplot(df[['disp', 'hp', 'drat', 'wt', 'mpg']], size=1.8, aspect=1.8,
                   plot_kws=dict(edgecolor="k", linewidth=0.5),
                   diag_kind="kde", diag_kws=dict(shade=True))
